@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD operation</title>
+</head>
+<body>
+    {{msg}}
+    <div id="divTwo">
+        <form action="/show">
+            <input type="submit" value="show records">
+        </form>
+    </div>
+    <div id="divone">
+        <form action="/send" methord="post">
+            {% csrf_token %}
+            <h3>Id : <input required autofocus type="text" name="id"></h3>
+
+        </form>
+    </div>
+</body>
+</html>
