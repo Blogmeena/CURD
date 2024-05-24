@@ -23,14 +23,14 @@
                 <th>Data 2</th>
                 <th>Buttons</th>
             </thead>
-            {% for d in Data %}
+            {% for d in data %}
             <tr>
-                <td>{{d.Id}}</td>
+                <td>{{d.ID}}</td>
                 <td>{{d.data1}}</td>
                 <td>{{d.data2}}</td>
                 <td>
-                    <a href="/edit?Id={{d.Id}}">Edit</a>
-                    <a href="/delete?Id={{d.Id}}">Delete</a>
+                    <a href="/edit?Id={{d.ID}}">Edit</a>
+                    <a href="/delete?Id={{d.ID}}">Delete</a>
                 </td>
             </tr>
             {% endfor %}
