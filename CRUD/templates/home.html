@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
     <title>CURD operation</title>
 </head>
 <body>
     {{msg}}
     <div id="divTwo">
-        <form action="/show">
+        <form action="show">
             <input type="submit" value="show records">
         </form>
     </div>
     <div id="divone">
-        <form action="/send" methord="post">
+        <form action="/send" method="POST">
             {% csrf_token %}
             <h3>Id : <input required autofocus type="text" name="id" id="id"></h3>
             <h3>Data 1: <input required  type="text" name="data1" id="data1"></h3>
